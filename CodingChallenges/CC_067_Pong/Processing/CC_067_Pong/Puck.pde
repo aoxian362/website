@@ -64,7 +64,7 @@ class Puck {
   }
 
   void edges() {
-    if (y < 0 || y > height) {
+    if (y < 0+r || y > height-r) {
       yspeed *= -1;
     }
 
